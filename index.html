@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exa</title>
+</head>
+<link rel="stylesheet" href="css/new-exa.css">
+<body>
+
+
+    <div class="container">
+<div class="left-con">
+<img src="images/ez.jpg" alt="Sample image">
+</div>
+
+<div class="right-con">
+    <div class="stuff">
+<p>Sign in with</p>
+<img src="images/face.jpg">
+<img src="images/twi.jpg">
+<img src="images/in.jpg">
+</div>
+<div class="ep-link">
+    <p>Or</p>
+</div>
+<form action="" name="form" class="cla" method="POST" onsubmit="return isvalid()" >
+<input type="email" placeholder="Your email" name="user" id="user" >
+<label for="e">Your email</label>
+
+
+<input type="password" placeholder="Password" name="pass" id="pass" >
+<label for="p">Password</label>
+
+<input type="submit" value="Send">
+
+</form>
+</div>
+    </div>
+    <!--fot-->
+        <nav>
+        <div class="nav-left">
+<p>Copyright @ 2023.All right reserved.</p>
+        </div>
+        <div class="nav-right">
+        <ul>
+        <li><img src="images/face.jpg"></li>
+        <li><img src="images/twi.jpg"></li>
+        <li><img src="images/in.jpg" ></li>
+        </ul>
+        </div>
+    </nav>
+
+<script >
+function isvalid(){
+    var user = document.form.user.value;
+    var pass = document.form.pass.value;
+    if(user.length==""&& pass.length==""){
+        alert("Username and password field is empty !!!");
+        return false
+        
+    }
+    else if(user.length==="kaj@gmail.com"&& pass.length==="123456"){
+window.location.href="new-welcome.html";
+    }
+        else if(user.length!=="kaj@gmail.com"&& pass.length!=="123456"){
+window.location.href="new-exa-error.html";    
+}
+    else{
+        if(user.length==""){
+            alert("Username field is empty !!!");
+        return false
+        }
+        if(pass.length==""){
+            alert("Password field is empty !!!");
+        return false
+        }
+    }
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
